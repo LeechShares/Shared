@@ -1,0 +1,13 @@
+{
+  "name": "openai-node-api",
+  "version": "1.0.0",
+  "description": "A simple Node.js API using OpenAI GPT-3",
+  "main": "app.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "axios": "^0.24.0"
+  }
+}
