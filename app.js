@@ -4,14 +4,24 @@ const axios = require('axios');
 const app = express();
 const port = 3000;
 
+let apiKey = ''; // Initialize the API key
+
 app.use(express.json());
 
-// Replace 'YOUR_OPENAI_API_KEY' with your actual OpenAI API key
-const apiKey = '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';
+app.use((req, res, next) => {
+  // Middleware to extract API key from URL parameter
+  const apiKeyParam = req.query.apiKey;
+  
+  if (apiKeyParam) {
+    apiKey = apiKeyParam;
+  }
 
-app.post('/generate-text', async (req, res) => {
+  next();
+});
+
+app.get('/generate-text', async (req, res) => {
   try {
-    const { prompt } = req.body;
+    const prompt = req.query.prompt || 'Hi'; // Set default prompt to 'Hi' if not provided in the URL
 
     const response = await axios.post(
       'https://api.openai.com/v1/engines/davinci/completions',
