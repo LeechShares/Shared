@@ -1,14 +1,17 @@
 [
   {
     "Name": "Project A",
-    "Description": "A cutting-edge project focused on innovation and efficiency."
+    "Description": "A cutting-edge project focused on innovation and efficiency.",
+    "Role": "Free"
   },
   {
     "Name": "Project B",
-    "Description": "An inspiring project with a vision to make a positive impact on society."
+    "Description": "An inspiring project with a vision to make a positive impact on society.",
+    "Role": "Premium"
   },
   {
     "Name": "Project C",
-    "Description": "A collaborative project aiming to bring together diverse talents for a common goal."
+    "Description": "A collaborative project aiming to bring together diverse talents for a common goal.",
+    "Role": "50 coins"
   }
 ]
