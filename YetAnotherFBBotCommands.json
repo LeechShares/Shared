@@ -1,17 +1,17 @@
 [
   {
-    "Name": "Project A",
-    "Description": "A cutting-edge project focused on innovation and efficiency.",
-    "Role": "Free"
+    "Name": "ai",
+    "Description": "Ask Ai a question.",
+    "Role": "user"
   },
   {
-    "Name": "Project B",
-    "Description": "An inspiring project with a vision to make a positive impact on society.",
-    "Role": "Premium"
+    "Name": "help",
+    "Description": "show all commands and its description.",
+    "Role": "user"
   },
   {
-    "Name": "Project C",
-    "Description": "A collaborative project aiming to bring together diverse talents for a common goal.",
-    "Role": "50 coins"
+    "Name": "uid",
+    "Description": "Show your uid.",
+    "Role": "user"
   }
 ]
